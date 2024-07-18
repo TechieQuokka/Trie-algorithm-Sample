@@ -1,0 +1,34 @@
+﻿<Window x:Class="Trie_algorithm_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trie_algorithm_Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="450"
+        KeyUp="Window_KeyUp">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="textBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" Height="30"
+                 KeyUp="textBox_KeyUp" KeyDown="textBox_KeyDown" Grid.ColumnSpan="2"/>
+        <RichTextBox Name="result_richTextBox" HorizontalAlignment="Left" Margin="10,45,0,30" Width="260" IsReadOnly="True" Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph Margin="0, 0, 0, 0">
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Name="data_RichTextBox" HorizontalAlignment="Left" Margin="140,45,0,30" Width="150" IsReadOnly="True" Grid.Column="1">
+            <FlowDocument>
+                <Paragraph Margin="0, 0, 0, 0">
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Name="Submit_Button" Content="Submit" HorizontalAlignment="Left" Margin="217,10,0,0" VerticalAlignment="Top" Height="30" Width="73" Click="SubmitButton_Click" Grid.Column="1" />
+        <Button Name="Remove_Button" Content="Remove" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Height="30" Width="72" Click="Remove_Button_Click" Grid.Column="1" />
+    </Grid>
+</Window>
